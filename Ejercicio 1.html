@@ -1,0 +1,120 @@
+<!--Diseña una pagina web de noticias que contenga:
+1. un encabezado con el nombbre del sitio web usando las etiqueta "header"
+2. un menu de navegacion con 3 enlaces ficticios usando la etiqueta "nav"
+3. un contenido principal con dos noticias usando "main" y "article"
+4. cada noticia debe tener un titulo, un autor,una fecha y un texto corto
+5. un "footer" con la informacion de contactos o derechos de autor-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <section>
+            <h2>Sitio web de noticias</h2>
+        </section>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Televidentes"> Televidentes</a></li>
+            <li><a href="Socios noticias">Socios Noticias</a></li>
+            <li><a href="Mundo noticias">Mundo Noticias</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+          <article>
+            <h3><b>Ultimo Momento</b></h3>
+            <h5><span class="etiqueta-azul">#San Vicente</span>. Camion queda barado en la carretera San Vicente-Tamuin, tomen precausiones. <br> <br>
+               <span class="etiqueta-azul">#San Vicente</span> <br>
+                <span class="etiqueta-azul">#Televidentes</span> <br>
+                <span class="etiqueta-azul">#Tamuin</span>
+            </h5>
+            <img src="camion.png" alt="camion" onclick="mostrarImagenGrande(this.src)">
+            <p><i>MIERCOLES 9 DE ABRIL, 12:34 PM</i></p>
+            <P><B>Televidentes</B></P>
+          </article>
+            
+
+            <article>
+                <h3><b>Colocan Topes A Peticion De La Cuidadania</b></h3>
+            <h5><span class="etiqueta-azul">#San Vicente</span>. Realizaron la colocacion de tope en la carretera San Vicente-Tanquian, a solicitud de las personas que transitan dia a dia. <br><br>
+                <span class="etiqueta-azul">#San Vicente</span> <br>
+                <span class="etiqueta-azul">#Tanquian</span><br>
+                <span class="etiqueta-azul">#Televidentes</span>
+            </h5>
+            <img src="tope.jpg" alt="tope" onclick="mostrarImagenGrande(this.src)">
+            <p><i>LUNES 1 DE ABRIL, 1:00 PM</i></p>
+            <P><B>Televidentes</B></P>
+            </article>
+            
+            <article>
+                <h3><b>Meme Del Dia</b></h3>
+            <h5>Las señoras cuando se dan cuenta que el marido ya cobro😂. <br><br>
+                <span class="etiqueta-azul">#Socios Noticias</span>
+            </h5>
+            <img src="chavo.jpg" alt="chavo" class="imagen-ancha" onclick="mostrarImagenGrande(this.src)">
+            <p><i>JUEVES 28 DE MARZO, 6:55 AM</i></p>
+            <P><B>Socios Noticias</B></P>
+            </article>
+
+            <article>
+                <h3><b>Se Pierden Borregos</b></h3>
+            <h5><span class="etiqueta-azul">#San Vicente</span>. Se pierden borregos en el rancho el Fiscal perteneciente del municipio de San Vicente, los dueños ya levantaron denuncia <br>
+                 para que las autoridades tomen accion en la busqueda de los animales. <br><br>
+                 <span class="etiqueta-azul">#San Vicente</span> <br>
+                 <span class="etiqueta-azul">#Mundo Noticias</span>
+            </h5>
+            <img src="borregos.jpg" alt="borregos" onclick="mostrarImagenGrande(this.src)">
+            <p><i>MIERCOLES 27 DE MARZO, 9:48 AM</i></p>
+            <P><B>Mundo Noticias</B></P>
+            </article>
+
+            <article>
+                <h3><b>Bonito Atardecer</b></h3>
+            <h5><span class="etiqueta-azul">#San Vicente</span>. Bonita foto comparten desde el naranjal ubicado en el municipio de San Vicente Tancuayalab.</h5>
+            <img src="atardecer.jpg" alt="atardecer" onclick="mostrarImagenGrande(this.src)">
+            <p><i>MARTES 26 DE MARZO, 6:47 PM</i></p>
+            <P><B>Mundo Noticias</B></P>
+            </article>
+        </section>
+    </main>
+    <aside>
+        <h2>Noticias adicionales</h2>
+        <ul>
+            <li><a href="#">Karate</a></li>
+            <li><a href="#">Futbol</a></li>
+            <li><a href="#">Formula 1</a></li>
+        </ul>
+    </aside>
+      <!-- VISOR DE IMAGEN GRANDE -->
+ <div id="visor-imagen" onclick="cerrarVisor()">
+    <span id="cerrar">&times;</span>
+    <img id="imagen-grande" class="" src="" alt="">
+  </div>
+  
+  <!-- SCRIPT PARA ACTIVAR EL VISOR -->
+  <script>
+    function mostrarImagenGrande(src) {
+        const visor = document.getElementById("visor-imagen");
+        const imagen = document.getElementById("imagen-grande");
+        imagen.src = src;
+        visor.style.display = "flex";
+    }
+    
+    function cerrarVisor() {
+        const visor = document.getElementById("visor-imagen");
+        visor.style.display = "none";
+    }
+    </script>
+
+    <footer>
+        &copy;2025. Todos los derechos reservados
+    </footer>
+
+</body>
+</html>

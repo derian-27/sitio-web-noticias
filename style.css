@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #0048f0;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background-color: rgb(16, 153, 239);
+    padding: 10px;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+article {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+article h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+}
+article h5 {
+    font-weight: normal;
+    color: #555;
+    line-height: 1.5em;
+}
+article img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+article p {
+    font-size: 0.9em;
+    color: #000000;
+    margin-top: 5px;
+}
+aside {
+    background-color: rgb(16, 153, 239);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgb(11, 69, 106);
+}
+aside ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+aside a {
+    color: #fff;
+    text-decoration: none;
+}
+.etiqueta-azul {
+    color: blue;
+}   
+footer {
+    background-color: #0048f0;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+/* Visor de imagen en grande */
+#visor-imagen {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+/* Imagen grande */
+.foto-grande {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 10px;
+}
+/* Oculto por defecto */
+.oculto {
+    display: none;
+}
+/* Botón de cerrar */
+#cerrar {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
